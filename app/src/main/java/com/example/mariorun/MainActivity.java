@@ -11,8 +11,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView skyimg = (ImageView) findViewById(R.id.sky);
-        int skyResource = getResources().getIdentifier("@drawable/sky", null, this.getPackageName());
-        skyimg.setImageResource(skyResource);
+        ImageView mario = (ImageView) findViewById(R.id.mario);
+
+        MovementState movement = new MovementState(getResources(), this.getPackageName());
+
+        mario.setImageResource(movement.getCurrentState());
+
     }
 }

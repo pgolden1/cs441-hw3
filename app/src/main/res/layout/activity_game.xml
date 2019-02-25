@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameActivity">
+    tools:context=".MainActivity"
+    >
 
     <ImageView
         android:id="@+id/sky"
@@ -14,6 +16,7 @@
         app:srcCompat="@drawable/sky"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="3dp" />
+
 
 
     <ImageView
@@ -63,5 +66,51 @@
         android:src="@drawable/walkright"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/cloud"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="175dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cloud" />
+
+    <ImageView
+        android:id="@+id/bush"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/jump"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/longbush"
+        tools:layout_editor_absoluteX="96dp" />
+
+    <ImageView
+        android:id="@+id/mario"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        app:srcCompat="@drawable/mario"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintStart_toStartOf="@+id/walkleft"
+        app:layout_constraintBottom_toTopOf="@+id/walkleft"
+        />
+
+    <ImageButton
+        android:id="@+id/menuButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/clear"
+        app:srcCompat="@drawable/menubutton"
+        tools:layout_editor_absoluteY="3dp" />
+
 
 </android.support.constraint.ConstraintLayout>

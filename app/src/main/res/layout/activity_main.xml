@@ -76,14 +76,38 @@
 
     <ImageView
         android:id="@+id/mario"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginLeft="157dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="147dp"
         android:layout_marginBottom="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/play"
         app:srcCompat="@drawable/mario"
         tools:layout_editor_absoluteX="175dp" />
+
+    <ImageView
+        android:id="@+id/goomba1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/mario"
+        app:layout_constraintBottom_toTopOf="@+id/play"
+        app:srcCompat="@drawable/goomba"
+        tools:layout_editor_absoluteY="600dp" />
+
+    <ImageView
+        android:id="@+id/goomba2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/play"
+        app:layout_constraintStart_toEndOf="@+id/mario"
+        app:srcCompat="@drawable/goombaflipped" />
+
 
 
 </android.support.constraint.ConstraintLayout>

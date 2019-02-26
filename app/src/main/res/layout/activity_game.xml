@@ -69,25 +69,37 @@
 
     <ImageView
         android:id="@+id/cloud"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="175dp"
+        android:layout_marginTop="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cloud" />
+        app:srcCompat="@drawable/longcloud" />
 
     <ImageView
         android:id="@+id/bush"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="15dp"
-        android:layout_marginLeft="150dp"
+        android:layout_marginLeft="250dp"
         app:layout_constraintBottom_toTopOf="@+id/jump"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/longbush"
+        app:srcCompat="@drawable/bush"
         tools:layout_editor_absoluteX="96dp" />
+
+    <ImageView
+        android:id="@+id/bush2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/jump"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bush"
+        tools:layout_editor_absoluteX="96dp" />
+
 
     <ImageView
         android:id="@+id/mario"
@@ -96,8 +108,8 @@
         app:srcCompat="@drawable/mario"
         tools:layout_editor_absoluteX="0dp"
         android:layout_marginBottom="15dp"
-        app:layout_constraintStart_toStartOf="@+id/walkleft"
-        app:layout_constraintBottom_toTopOf="@+id/walkleft"
+        app:layout_constraintStart_toStartOf="@+id/jump"
+        app:layout_constraintBottom_toTopOf="@+id/jump"
         />
 
     <ImageButton
@@ -111,6 +123,25 @@
         android:background="@drawable/clear"
         app:srcCompat="@drawable/menubutton"
         tools:layout_editor_absoluteY="3dp" />
+
+    <ImageView
+        android:id="@+id/pipe"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/jump"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pipeleft" />
+
+    <ImageView
+        android:id="@+id/pipe2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/jump"
+        app:srcCompat="@drawable/piperight"
+        tools:layout_editor_absoluteY="598dp" />
 
 
 </android.support.constraint.ConstraintLayout>

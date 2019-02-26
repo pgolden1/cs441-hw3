@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ImageButton;
 import android.view.View;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton playButton;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         mario = (ImageView) findViewById(R.id.mario);
         playButton =(ImageButton)findViewById(R.id.play);
+
 
 
         playButton.setOnClickListener(new View.OnClickListener() {
@@ -37,34 +40,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
-
-    public class MarioView extends SurfaceView implements Runnable{
-
-        ImageButton jump, walkLeft, walkRight;
-        ImageView mario;
-
-        MovementState movement;
-
-        public MarioView(Context c, MovementState m, ImageView mario, ImageButton jumpButton, ImageButton walkLeftButton, ImageButton walkRightButton){
-            super(c);
-            this.mario = mario;
-            this.movement = movement;
-            jump = jumpButton;
-            walkLeft = walkLeftButton;
-            walkRight = walkRightButton;
-        }
-
-        @Override
-        public void run(){
-            //mario.setImageResource(movement.getCurrentState());
-        }
-
-
-
 
 
     }
+
+
+
 
 
 }
